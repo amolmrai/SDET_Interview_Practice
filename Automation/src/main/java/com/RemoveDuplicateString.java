@@ -25,3 +25,7 @@ public class RemoveDuplicateString {
         System.out.println(uniqueString);
     }
 }
+//Remove duplicates from a given string
+// example:- apple
+
+// Find First Character Occurrence in a String

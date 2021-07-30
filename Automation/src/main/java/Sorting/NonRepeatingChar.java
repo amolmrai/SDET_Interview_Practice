@@ -14,6 +14,7 @@ public class NonRepeatingChar {
         }
         return uniqueChar;
     }
+
     public static void main(String arg[]){
     System.out.println("Non Repeating Char is "+getNonRepeatingChar("apple"));
     }
