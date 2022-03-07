@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.macys.sdt:sdt-framework:0.0.792">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/macys/sdt/sdt-framework/0.0.792/sdt-framework-0.0.792.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/macys/sdt/sdt-framework/0.0.792/sdt-framework-0.0.792-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/macys/sdt/sdt-framework/0.0.792/sdt-framework-0.0.792-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

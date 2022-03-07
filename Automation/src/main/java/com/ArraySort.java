@@ -14,14 +14,15 @@ public class ArraySort {
         for(int i=0;i<nums.length-1;i++){
             for(int j=i+1; j<nums.length;j++){
                 if(nums[i] == nums[j]){
-                    System.out.print(nums[i]);
+                    System.out.println(nums[i]);
+                    j=nums.length;
                 }
             }
         }
     }
 
     public static void main(String arr[]){
-        int[] array = new int[]{50, 50, 501, 520, 530,530 };
+        int[] array = new int[]{50, 50, 501, 520, 530,530,50 };
     new ArraySort().findDuplicate1(array);
     }
 
@@ -40,9 +41,34 @@ public class ArraySort {
                 index++;
             }
         }
+
+
         public static void main (String arr[] ){
-             int[] array= new int[]{50, 50, 501, 520, 530,530 };
+             int[] array= new int[]{50, 50, 501, 520, 530,530,50 };
             ArrayCalulation.findDuplicate(array);
+
         }
     }
+
+
+    /*public static class Solution {
+        public static int store(int[] nums, int cur) {
+            if (cur == nums[cur])
+                return cur;
+            int nxt = nums[cur];
+            nums[cur] = cur;
+            return store(nums, nxt);
+        }
+
+        public static int findDuplicate2(int[] nums) {
+            return store(nums, 0);
+        }
+
+        public static void main (String arr[] ){
+            int[] array= new int[]{1,3,4,2,2 };
+            Solution.findDuplicate2(array);
+
+        }
+    }*/
+
 }

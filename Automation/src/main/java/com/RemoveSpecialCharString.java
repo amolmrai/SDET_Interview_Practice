@@ -73,10 +73,18 @@ public class RemoveSpecialCharString {
             return tempWord;
         }
 
+
+        public static String removeSpecialChar(String str){
+
+            return str = str.replaceAll("[^a-bA-Z0-9]", " ");
+        }
+
         public static void main (String[]args){
             RemoveSpecialCharString obj = new RemoveSpecialCharString();
             List ll =  obj.getStringWords("How many eggs are in a half-dozen, 13?");
             System.out.println("------ "+ll);
+            System.out.println("with Regex:-  "+removeSpecialChar("aaaaabbbbcccdddeee?"));
+
         }
 
     }

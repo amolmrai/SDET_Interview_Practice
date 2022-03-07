@@ -30,6 +30,6 @@ public class SecondRepetedChar {
     public static void main(String arg[]){
         String [] CharArray = {"A","B","B","C","A","B","C","D"};
         System.out.println("Actual Array "+ CharArray);
-        System.out.println("Second repeated Char is "+SecondRepetedChar.getSecondRepeatedChar(CharArray,2));
+        System.out.println("Second repeated Char is "+SecondRepetedChar.getSecondRepeatedChar(CharArray,3));
     }
 }

@@ -1,3 +1,4 @@
+
 package utils.framework;
 
 import org.openqa.selenium.WebDriver;
@@ -5,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
  public class  DriverManager {
     static WebDriver driver;
+
     public static WebDriver getWebDriver(){
         if(null == driver){
             driver = new ChromeDriver();
@@ -13,6 +15,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
     return driver;
     }
 
+    public void launchApplication(){
+        DriverManager dm = new DriverManager();
+        WebDriver browser = DriverManager.getWebDriver();
+        browser.get("https://www.irctc.co.in/nget/train-search");
+    }
 
     public static void killBrowser(){
        try{

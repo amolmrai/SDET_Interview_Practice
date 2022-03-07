@@ -14,15 +14,15 @@ public class ValidParentheses {
         Stack<Character> stack = new Stack<>();
         // push open parentheses into the stack
         for(char c : str.toCharArray()){
-            if(c == '(' ){
+            if(c == '(' || c=='[' || c=='{'){
                 stack.push(c);
             // pop open parentheses if c = closing parentheses.
-            }else if(c == ')' ){
+            }else if(c == ')' || c==']' || c=='}' ){
                 if(stack.isEmpty()){
                     stack.push(c);
-                }else if(stack.peek() == '('){
+                }else if(stack.peek() == '(' || stack.peek()=='[' || stack.peek()=='{'){
                     stack.pop();
-                }else if(stack.peek() == ')'){
+                }else if(stack.peek() == ')' || stack.peek()==']' || stack.peek()=='}'){
                     stack.push(c);
                 }
             }
@@ -31,7 +31,7 @@ public class ValidParentheses {
     }
 
     public static void main(String arg[]){
-        String str = ")((()))";
+        String str = "[(as]i)said";
         System.out.println("The Given String "+str + " is valid "+isValidParentheses(str));
     }
 
